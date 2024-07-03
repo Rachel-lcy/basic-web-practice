@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrays and Objects</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- ⬆️ <head> ⬆️ the parts the browswer cares about -->
+
+<!-- ⬇️ <body> ⬇️ the content the visitor sees       -->
+<body>
+
+    <section>
+        <h2>Arrays (Lists)</h2>
+        <pre><code>
+    In html there were two <ul></ul> and <ol></ol> these are simply ways of 
+    <em>displaying</em> lists
+
+    // ARRAY | A group of items
+        // always in square brackets []
+        fruit_salad = ['apple', 'orange', 'banana', 'grapes', 'strawberry' ]
+        
+        // Array items are accessed by their 'INDEX'
+        // Array Indexes always start at 0
+
+        fruit_salad[3] will output 'grapes'
+
+        <script>
+            // always in square brackets []
+            fruit_salad = ['apple', 'orange', 'banana', 'grapes', 'strawberry']
+
+            // Array items are accessed by their 'INDEX'
+            // Array Indexes always start at 0
+            console.log(fruit_salad[3])
+        </script>
+        </pre></code>
+</section>
+
+<section>
+
+    <h2>Objects</h2>
+    <pre><code>
+// OBJECT | a collection of Properties (attributes)
+// JSON - JavaScript Object Notation
+    
+    // Objects use Key:Value pairs to hold their data
+    // The Value can be any datatype we've discussed
+        // string
+        nick_name: "Tucker" 
+        
+        // boolean
+        married: true 
+
+        // array
+        children: ["Petunia Prettybottom", "Jaguar Ironfist"] 
+
+    // Objects are declared as a variable
+    // Properties held within curly brackets
+
+    let Sean = {
+        nick_name: "Tucker", 
+        married: true,
+        children: ["Petunia Prettybottom", "Jaguar Ironfist"]
+    }
+
+    // Object data can be accessed via dot notation
+
+    <script>
+        let Sean = {
+            nick_name: "Tucker",
+            married: true,
+            children: ["Petunia Prettybottom", "Jaguar Ironfist"]
+        }
+        // You can use the whole object
+        console.log(Sean)
+
+        // Show the nick_name
+        console.log(Sean.nick_name)
+
+        // Arrays are still accessed by their index
+        console.log(Sean.children[1])
+
+        // you can even add items to an object
+        Sean.teaching_at = "SAIT"
+
+        // check the full object in the console to see the new property
+        console.log(Sean)
+
+    </script>
+    </pre></code>
+ </section>
+</body>
+</html>

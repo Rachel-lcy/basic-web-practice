@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Basic JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- ⬆️ <head> ⬆️ the parts the browswer cares about -->
+
+<!-- ⬇️ <body> ⬇️ the content the visitor sees       -->
+<body>
+    <section>
+        <h2>The Console</h2>
+        <pre><code>
+        Right-click on the webpage and select 'Inspect' then 
+        click the 'Console' tab at the top of the inspector window
+
+        If you look at the page source you'll see a script tag with this code snippet:
+        
+        $ console.log("\n\nHey, there! \nCan you see this in the console?")
+        
+        <script>
+            console.log("\n\nHey, there! \nCan you see this in the console?")        
+        </script>
+        </code></pre>
+    </section>
+
+    <section>
+        <h2>Basic Data Types</h2>
+        <pre><code>
+    There are several types of data (datatypes) you will use:
+
+        // STRING | Text and digits that won't work in math functions
+            // always in quotes either " " or ' '
+            'My Name' is a string
+
+        // NUMBER | Digits used for math
+            // No quotes
+            1999 is a Number 
+
+            // If you put digits in quotes it becomes a string
+            '1999' is a String
+        
+            // What's the difference?
+            
+                // Numbers, add together mathmatically
+                2 + 2 = 4 
+                
+                // Strings, concactenate into a new string
+                '2' + '2' = '22'
+
+        // BOOLEAN | only two values: true or false <- always lowercase
+
+            // Your attendance is a Boolean
+            student_is_in_class = true;
+            
+            //unless you are somewhere else
+            student_is_in_class = false;
+
+    </code></pre>
+    </section>
+    <section>
+        <h2>Variable Types</h2>
+        <pre><code>
+    We declare variables in two ways:
+
+        // CONST | Variables who's value <em>cannot</em> be reassigned
+        const the_greeting = "Hello";
+
+        // LET | Varibales who's value <em>can</em> be reassigned:
+        let the_object = "World";
+
+            // Using Variables
+            
+                // declare your variable
+                let first_name = 'Sean'
+                
+                // Now you can use the variable (no need for 'let' that's only for declaring)
+                console.log(first_name) 
+
+                // you can also change your variables
+                first_name = 'Tucker'
+
+                console.log(first_name)
+                
+                // If you try to reassign a CONST it will throw an error
+                // check the console to see the error
+                the_greeting = 'hi'
+
+        <script>
+            // CONST | Variables who's value won't be reassigned
+            const the_greeting = "Hello";
+
+            // LET | Varibales who's value can be reassigned:
+            let the_object = "World";
+
+            // declare your variable
+            let first_name = 'Sean'
+
+            // Now you can use the variable (no need for 'let' that's only for declaring)
+            console.log(the_greeting + " " + first_name)
+
+            // you can also change your variables
+            first_name = 'Tucker'
+            console.log(the_greeting + " " + first_name)
+
+            // If you try to reassign a CONST it will throw an error
+            the_greeting = 'hi'
+        </script>
+
+    </code></pre>
+    </section>
+<section>
+    <h2>Comparing Data</h2>
+    <pre><code>
+    // COMPARITORS | how we compare datatypes
+    // Results are boolean (true/false)
+        Greater Than >
+        Less Than <
+        Equal to == 
+        NOT Equal to !=
+
+        // Let's compare these numbers
+        const first_number = 1;
+        const second_number = 2;
+
+    
+        <script>
+        // Let's compare these numbers
+        const first_number = 1;
+        const second_number = 2;
+        
+        // the expected output is true,false,true,false
+        console.log(first_number != second_number);
+        console.log(first_number == second_number);
+        console.log(first_number < second_number);
+        console.log(first_number > second_number);
+        
+        </script>
+
+    <h2>If Statements</h2>
+    <pre><code>
+    // we can take action based on the comparisons
+    // the structure is: if () { }
+    // () where the comparison happens
+    // {} the code that runs if the comparison is true
+        
+        let big = 100;
+        let small = 10;
+
+        if (big > small){
+            console.log("It's True");
+        }
+
+        <script>
+            let big = 100;
+            let small = 10;
+
+            if (big > small) {
+                console.log("It's True");
+            }
+        </script>
+    
+    // but what if the results is false
+    // we add an ELSE
+
+        let big = 100;
+        let small = 10;
+
+        if (big == small){
+            console.log("It's True");
+        } else {
+            console.log("It's False");
+        }
+        <script>
+
+            if (big == small) {
+                console.log("It's True");
+            } else {
+                console.log("It's False");
+            }
+
+        </script>
+    </code></pre>
+    </section>
+    <section>
+        <code><pre>
+        <h2>Functions</h2>
+        // Functions are reusable code
+
+        function_name (arguments){
+            the code to run;
+        }
+    
+    </pre></code>
+    </section>
+
+</body>
+
+</html>
